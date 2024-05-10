@@ -26,6 +26,9 @@
                                     <p class="title">{{product.title}}</p>
                                     <p>Lingua: {{product.language}}</p>
                                     <p>Voto: {{product.vote}}</p>
+                                    <p v-if="product.profits">Profitti: {{product.profits}}</p>
+                                    <p v-if="product.duration">Durata: {{product.duration}}</p>
+                                    <p v-if="product.seasons">Stagioni: {{product.seasons}}</p>
                                 </div>
                                 <div class="modal fade" :id="'cardModal' + i" tabindex="-1" :aria-labelledby="'cardLabel' + i" aria-hidden="true">
                                     <div class="modal-dialog">
